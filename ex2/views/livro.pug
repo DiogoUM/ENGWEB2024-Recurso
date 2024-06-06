@@ -1,0 +1,80 @@
+extends layout
+
+block content
+    h1= title
+    a(href='/') Voltar
+    p
+        strong id:
+        span= livro._id
+    p
+        strong author:
+        span= livro.author
+    p
+        strong awards:
+        span= livro.awards
+    p
+        strong bbeScore:
+        span= livro.bbeScore
+    p
+        strong bbeVotes:
+        span= livro.bbeVotes
+    p
+        strong bookFormat:
+        span= livro.bookFormat
+    p
+        strong characters:
+        span= livro.characters
+    p
+        strong description:
+        span= livro.description
+    p
+        strong edition:
+        span= livro.edition
+    p
+        strong firstPublishDate:
+        span= livro.firstPublishDate
+    p
+        strong genres:
+        span= livro.genres
+    p
+        strong isbn:
+        span= livro.isbn
+    p
+        strong language:
+        span= livro.language
+    p
+        strong likedPercent:
+        span= livro.likedPercent
+    p
+        strong numRatings:
+        span= livro.numRatings
+    p
+        strong pages:
+        span= livro.pages
+    p
+        strong price:
+        span= livro.price
+    p
+        strong publishDate:
+        span= livro.publishDate
+    p
+        strong publisher:
+        span= livro.publisher
+    p
+        strong rating:
+        span= livro.rating
+    p
+        strong ratingsByStars:
+        span= livro.ratingsByStars
+    p
+        strong series:
+        span= livro.series
+    p
+        strong setting:
+        span= livro.setting
+    p
+        strong title:
+        span= livro.title
+    p
+        strong imagem:
+        a(href=livro.coverImg)

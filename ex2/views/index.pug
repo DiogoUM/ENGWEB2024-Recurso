@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  table
+    thead
+      tr
+        th id
+        th title
+        th author
+        th publishDate
+        th pages
+    tbody
+      each livro in livros
+        tr
+          td
+            a(href='/'+livro._id)= livro._id
+          td= livro.title
+          //td= livro.author //TODO
+          td
+            a(href='/authors/'+livro.author)= livro.author
+          td= livro.publishDate
+          td= livro.pages
